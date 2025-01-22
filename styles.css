@@ -574,4 +574,8 @@ Responsive Design
 		padding: 1rem 2.5rem; /* Adjust button size */
 		font-size: 0.9rem;
 	}
+
+	.card-description {
+		display: none;
+	}
 }
