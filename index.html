@@ -9,25 +9,26 @@
 	<meta name="description" content="Anthonys Pizza and Pasta House">
     <title>Anthony's - Home</title>
     <script type="application/ld+json">
-        {
-          "@context" : "https://schema.org",
-          "@type" : "WebSite",
-          "name" : "Anthonys Pizza and Pasta House",
-          "url" : "https://anthonyspizzaandpastahouse.com/"
-        }
+	{
+	  "@context" : "https://schema.org",
+	  "@type" : "WebSite",
+	  "name" : "Anthonys Pizza and Pasta House",
+	  "url" : "https://anthonyspizzaandpastahouse.com/"
+	}
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3999668652667116" crossorigin="anonymous"></script>
     <meta name="robots" content="index, follow">
     <link href="favicon.png" type="image/png" rel="icon">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-content">
-            <a href="/anthonys">
-                <img class="logo" src="logo.png" alt="Anthony's N.Y. Pizza & Pasta House. Welcome!">
+            <a href="/">
+                <img class="logo" src="/static/logo.png" alt="Anthony's N.Y. Pizza & Pasta House. Welcome!">
             </a>
             <button class="hamburger" onclick="toggleMenu()">
                 <span></span>
@@ -35,162 +36,152 @@
                 <span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="/anthonys" class="nav-link">About Us</a></li>
-                <li><a href="/anthonys" class="nav-link">Menu</a></li>
-                <li><a href="/anthonys" class="nav-link">Gallery</a></li>
+                <li><a href="/" class="nav-link">About Us</a></li>
+                <li><a href="/" class="nav-link">Menu</a></li>
+                <li><a href="/" class="nav-link">Gallery</a></li>
             </ul>
         </div>
     </nav>
     <main>
         <div class="parent-div">
-            <div class="overlay-content">
-                <h1>NOTHING BEATS A FRESH START</h1>
-                <p>Got resolutions? We've got solutions: delicious flavors of the Cantina Chicken Menu.</p>
-                <button class="cta-button">OUR MENU</button>
-            </div>
-            <img class="hero-image" src="hero.jpg" alt="A banquet of food on the table">
-            <div class="locations-section">
-                <div class="section-header">
-                    <h1>LOCATIONS</h1>
+            <div class="hero-container">
+                <div class="overlay-content">
+                    <h1>NOTHING BEATS A FRESH START</h1>
+                    <p>Got resolutions? We've got solutions: delicious flavors of the Cantina Chicken Menu.</p>
+                    <button class="cta-button">OUR MENU</button>
                 </div>
-                <div class="card-section">
-                    <a class="card" href="/anthonys">
-                        <img src="clarksville.png" alt="Anthonys Pizza in Clarksville" class="card-image">
-                        <h3 class="card-title">Anthony's in Clarksville, MD</h3>
-                        <p class="card-description">
-                        5805 Square Dr. Clarksville, MD 21029
-                        <br>
-                        Phone #: (443) 535-9777
-                        </p>
-                    </a>
-                    <a class="card" href="/anthonys">
-                        <img src="bowie.png" alt="Anthony's in Bowie, MD" class="card-image">
-                        <h3 class="card-title">Anthony's in Bowie, MD</h3>
-                        <p class="card-description">
-                        15480 Annapolis Rd. Bowie, MD 20715
-                        <br>
-                        Phone #: (301) 262-7804
-                        </p>
-                    </a>
+                <img class="hero-image" src="/static/hero.jpg" alt="A banquet of food on the table">
+            </div>
+            <div class="locations-section">
+                <div class="locations-subsection">
+                    <div class="section-header">
+                        <h1>LOCATIONS</h1>
+                    </div>
+                    <div class="card-section">
+                        <a class="card" href="/">
+                            <img src="/static/clarksville.png" alt="Anthonys Pizza in Clarksville" class="card-image">
+                            <h3 class="card-title">Anthony's in Clarksville, MD</h3>
+                            <p class="card-description">
+                            5805 Square Dr. Clarksville, MD 21029
+                            <br>
+                            Phone #: (443) 535-9777
+                            </p>
+                        </a>
+                        <a class="card" href="/">
+                            <img src="/static/bowie.png" alt="Anthony's in Bowie, MD" class="card-image">
+                            <h3 class="card-title">Anthony's in Bowie, MD</h3>
+                            <p class="card-description">
+                            15480 Annapolis Rd. Bowie, MD 20715
+                            <br>
+                            Phone #: (301) 262-7804
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="menu-photos-section">
-                <div class="section-header">
-                    <h1>WHAT WE OFFER</h1>
-                </div>
-                <div class="card-section">
-                    <a class="second-card" href="/anthonys">
-                        <img src="pizza.jpg" alt="" class="card-image">
-                        <h3 class="card-title">Pizza</h3>
-                        
-                    </a>
-                    <a class="second-card" href="/anthonys">
-                        <img src="wings.jpg" alt="Anthony's in Bowie, MD" class="card-image">
-                        <h3 class="card-title">Wings</h3>
-                        
-                    </a>
-                    <a class="second-card" href="/anthonys">
-                        <img src="pasta.jpg" alt="Spaghetti and meatballs" class="card-image">
-                        <h3 class="card-title">Pasta</h3>
-                    </a>
-                </div>
-                <div class="card-section spaced-top">
-                    <a class="second-card" href="/anthonys">
-                        <img src="seafood.jpg" alt="Anthonys Pizza in Clarksville" class="card-image">
-                        <h3 class="card-title">Seafood</h3>
-                        
-                    </a>
-                    <a class="second-card" href="/anthonys">
-                        <img src="empanadas.jpg" alt="Anthony's in Bowie, MD" class="card-image">
-                        <h3 class="card-title">Empanadas</h3>
-                        
-                    </a>
-                    <a class="second-card" href="/anthonys">
-                        <img src="more.jpg" alt="Anthonys Pizza in Clarksville" class="card-image">
-                        <h3 class="card-title">and More!</h3>
-                        
-                    </a>
-                </div>
-            </div>
-            <div class="side-section">
-                <div class="side-text-content">
-                    <h2 class="side-header">We do catering, too</h2>
-                    <p class="side-section-text">
-                        Whether it's a wedding, corporate gathering, or a family celebration, our catering services bring bold flavors and impeccable presentation to your table. Let us handle the food—you focus on making memories.
-                    </p>
-                </div>
-                <div class="side-image">
-                    <img src="catering.jpg" alt="Delicious food" class="side-section-image">
-                </div>
-            </div>
-            <div class="side-section reverse">
-                <div class="side-text-content">
-                    <h2 class="side-header">Perfect pairings for every dish</h2>
-                    <p class="side-section-text">
-                        Our thoughtfully curated selection of beers, wines, and specialty drinks is here to complement every bite. Whether you're enjoying a hearty entrée or a light appetizer, we have just the beverage to complete your experience.
-                    </p>
-                </div>
-                <div class="side-image">
-                    <img src="wine.jpg" alt="Delicious food" class="side-section-image">
+                <div class="menu-photos-subsection">
+                    <div class="section-header">
+                        <h1>WHAT WE OFFER</h1>
+                    </div>
+                    <div class="menu-card-section">
+                        <a class="second-card" href="/">
+                            <img src="/static/pizza.jpg" alt="" class="card-image">
+                            <h3 class="second-card-title">Pizza</h3>
+                            
+                        </a>
+                        <a class="second-card" href="/">
+                            <img src="/static/wings.jpg" alt="Anthony's in Bowie, MD" class="card-image">
+                            <h3 class="second-card-title">Wings</h3>
+                            
+                        </a>
+                        <a class="second-card" href="/">
+                            <img src="/static/pasta.jpg" alt="Spaghetti and meatballs" class="card-image">
+                            <h3 class="second-card-title">Pasta</h3>
+                        </a>
+                    </div>
+                    <div class="menu-card-section spaced-top">
+                        <a class="second-card" href="/">
+                            <img src="/static/seafood.jpg" alt="Anthonys Pizza in Clarksville" class="card-image">
+                            <h3 class="second-card-title">Seafood</h3>
+                            
+                        </a>
+                        <a class="second-card" href="/">
+                            <img src="/static/empanadas.jpg" alt="Anthony's in Bowie, MD" class="card-image">
+                            <h3 class="second-card-title">Empanadas</h3>
+                            
+                        </a>
+                        <a class="second-card" href="/">
+                            <img src="/static/more.jpg" alt="Anthonys Pizza in Clarksville" class="card-image">
+                            <h3 class="second-card-title">and More!</h3>
+                            
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="side-section">
-                <div class="side-text-content">
-                    <h2 class="side-header">Ready to experience it all?</h2>
-                    <p class="side-section-text">
-                        From mouthwatering appetizers to decadent desserts, our menu is crafted to delight every taste bud. Browse our dishes, find your favorites, and place your order for dine-in, takeout, or delivery.
-                    </p>
+                <div class="side-subsection">
+                    <div class="side-text-content">
+                        <h2 class="side-header">We do catering, too</h2>
+                        <p class="side-section-text">
+                            Whether it's a wedding, corporate gathering, or a family celebration, our catering services bring bold flavors and impeccable presentation to your table. Let us handle the food—you focus on making memories.
+                        </p>
+                    </div>
+                    <div class="side-image">
+                        <img src="/static/catering.jpg" alt="Delicious food" class="side-section-image">
+                    </div>
                 </div>
-                <div class="side-image">
-                    <img src="anthonys.jpg" alt="Delicious food" class="side-section-image">
+                <div class="side-subsection reverse">
+                    <div class="side-text-content">
+                        <h2 class="side-header">Perfect pairings for every dish</h2>
+                        <p class="side-section-text">
+                            Our thoughtfully curated selection of beers, wines, and specialty drinks is here to complement every bite. Whether you're enjoying a hearty entrée or a light appetizer, we have just the beverage to complete your experience.
+                        </p>
+                    </div>
+                    <div class="side-image">
+                        <img src="/static/wine.jpg" alt="Delicious food" class="side-section-image">
+                    </div>
+                </div>
+                <div class="side-subsection">
+                    <div class="side-text-content">
+                        <h2 class="side-header">Ready to experience it all?</h2>
+                        <p class="side-section-text">
+                            From mouthwatering appetizers to decadent desserts, our menu is crafted to delight every taste bud. Browse our dishes, find your favorites, and place your order for dine-in, takeout, or delivery.
+                        </p>
+                    </div>
+                    <div class="side-image">
+                        <img src="/static/anthonys.jpg" alt="Delicious food" class="side-section-image">
+                    </div>
                 </div>
             </div>
             <div class="faqs-section">
-                <div class="section-header">
-                    <h1>FAQs</h1>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">How do I order?</button>
-                    <div class="faq-answer">
-                    <p>You can order at these links:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspClarksville: <a href="https://www.anthonysnypizzapastahousemenu.com/">Here</a><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBowie: <a href="https://www.anthonysnypizzapastahouse.com/">Here</a></p>
+                <div class="faqs-subsection">
+                    <div class="section-header">
+                        <h1>FAQs</h1>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">How can I track my order?</button>
-                    <div class="faq-answer">
-                    <p>You will receive text messages updating you on the progress of your order.</p>
+                    <div class="faq-item">
+                        <button class="faq-question">How do I order?</button>
+                        <div class="faq-answer">
+                        <p>You can order at these links:<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspClarksville: <a href="https://www.anthonysnypizzapastahousemenu.com/">Here</a><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBowie: <a href="https://www.anthonysnypizzapastahouse.com/">Here</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">What are your hours?</button>
-                    <div class="faq-answer">
-                    <p>
-                        We operate from 11 am - 10 pm on Sundays thru Thursdays. On Fridays and Saturdays, we're open from 11 am - 11 pm.
-                    </p>
+                    <div class="faq-item">
+                        <button class="faq-question">How can I track my order?</button>
+                        <div class="faq-answer">
+                        <p>You will receive text messages updating you on the progress of your order.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What are your hours?</button>
+                        <div class="faq-answer">
+                        <p>
+                            We operate from 11 am - 10 pm on Sundays thru Thursdays. On Fridays and Saturdays, we're open from 11 am - 11 pm.
+                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script>
-          const faqItems = document.querySelectorAll(".faq-question");
-        
-          faqItems.forEach(item => {
-            item.addEventListener("click", () => {
-              const answer = item.nextElementSibling;
-              const isVisible = answer.style.display === "block";
-        
-              // Toggle visibility
-              answer.style.display = isVisible ? "none" : "block";
-        
-              // Optional: Add an animation effect (accordion style)
-              if (!isVisible) {
-                answer.style.maxHeight = answer.scrollHeight + "px";
-              } else {
-                answer.style.maxHeight = null;
-              }
-            });
-          });
-        </script>
     </main>
 </body>
 <hr>
@@ -198,9 +189,9 @@
     <div class="footer-container">
         <footer>
             <ul class="nav footer-nav">
-                <li class="nav-item footer-item"><a href="/anthonys" class="nav-link footer-link">About Us</a></li>
-                <li class="nav-item footer-item"><a href="/anthonys" class="nav-link footer-link">Menu</a></li>
-                <li class="nav-item footer-item"><a href="/anthonys" class="nav-link footer-link">Gallery</a></li>
+                <li class="nav-item footer-item"><a href="/" class="nav-link footer-link">About Us</a></li>
+                <li class="nav-item footer-item"><a href="/" class="nav-link footer-link">Menu</a></li>
+                <li class="nav-item footer-item"><a href="/" class="nav-link footer-link">Gallery</a></li>
             </ul>
             <p class="copyright">&copy; 2025 Anthonys Pizza and Pasta House</p>
         </footer>
