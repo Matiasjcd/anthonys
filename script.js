@@ -1,3 +1,22 @@
+const faqItems = document.querySelectorAll(".faq-question");
+        
+faqItems.forEach(item => {
+    item.addEventListener("click", () => {
+          const answer = item.nextElementSibling;
+          const isVisible = answer.style.display === "block";
+        
+          // Toggle visibility
+          answer.style.display = isVisible ? "none" : "block";
+        
+          // Optional: Add an animation effect (accordion style)
+          if (!isVisible) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+          } else {
+                answer.style.maxHeight = null;
+          }
+    });
+});
+
 function toggleMenu() {
     const navLinks = document.getElementById('navLinks');
     navLinks.classList.toggle('active');
