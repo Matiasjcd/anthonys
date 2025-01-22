@@ -42,7 +42,7 @@ main {
 hr {
 	width: 100vw;
 	border: none;
-	height: 1px;
+	height: 0.0625rem;
 	background-color: var(--secondary);
 }
 
@@ -61,27 +61,43 @@ Index Styles
 	margin-bottom: 5rem;
 }
 
-.hero-image {
-	width: 100vw;
-	height: auto;
+/* Hero Section */
+.hero-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding-left: 17vw;
+	overflow: hidden;
+	background-color: var(--background);
 }
 
-/* Text Overlay */
-.overlay-content {
+.hero-image {
 	position: absolute;
-	top: 20rem;
-	left: 14.5rem;
-	text-align: left;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.overlay-content {
 	max-width: 27.5rem;
+	text-align: left;
 	background-color: var(--primary);
 	padding: 0.5rem 2rem 2rem 2rem;
 	border-radius: 2rem;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for contrast */
 }
 
 .overlay-content h1 {
 	margin-bottom: 1.25rem;
 	line-height: 2.5rem;
 	color: var(--secondary);
+	font-size: 2.45rem;
 }
 
 .overlay-content p {
@@ -112,14 +128,19 @@ Index Styles
 
 /* Locations Section */
 .locations-section {
-	padding: 2rem 0rem 5rem 0rem;
+	display: flex;
+    justify-content: center;
+}
+
+.locations-subsection {
+	padding: 2rem 1rem 5rem 1rem;
+	max-width: 67.5rem;
 }
 
 .card-section {
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	padding: 0rem 10rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	place-items: center;
 }
 
 .card {
@@ -127,6 +148,8 @@ Index Styles
 	max-width: 30rem;
 	text-align: center;
 	padding: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
 	border-radius: 0.625rem;
 	box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.1);
 	text-decoration: none;
@@ -158,13 +181,27 @@ Index Styles
 /* Menu Photos Section */
 .menu-photos-section {
 	background-color: #F0F0F0;
-	padding: 2rem 0rem 4.5rem 0rem;
+	display: flex;
+    justify-content: center;
+}
+
+.menu-photos-subsection {
+	padding: 2rem 1rem 4.5rem 1rem;
+	max-width: 67.5rem
+}
+
+.menu-card-section {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center;
 }
 
 .second-card {
 	flex: 1;
 	max-width: 20rem;
 	text-align: center;
+	margin-left: 1rem;
+	margin-right: 1rem;
 	padding: 1rem;
 	border-radius: 0.625rem;
 	box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.1);
@@ -172,11 +209,17 @@ Index Styles
 	color: inherit;
 	background-color: var(--primary);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	height: 100%;
 }
 
 .second-card:hover {
 	transform: translateY(-0.625rem);
 	box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.second-card-title {
+	font-size: 1.25rem;
+	margin: 1rem 0 0.5rem;
 }
 
 .spaced-top {
@@ -185,11 +228,17 @@ Index Styles
 
 /* Side by Side Section */
 .side-section {
-	padding: 4.5rem 10rem 4.5rem 10rem;
+	display: grid;
+  	place-items: center;
+}
+
+.side-subsection {
+	padding: 4.5rem 2rem;
+	gap: 2rem;
+	max-width: 67.5rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 2rem;
 }
 
 .side-text-content {
@@ -215,7 +264,7 @@ Index Styles
 .side-section-image {
 	max-width: 100%;
 	height: auto;
-	border-radius: 10px;
+	border-radius: 0.625rem;
 }
 
 .reverse {
@@ -225,8 +274,12 @@ Index Styles
 /* FAQs Section */
 .faqs-section {
 	background-color: #F0F0F0;
-	margin: auto;  
-	padding: 2rem 10rem 4.5rem 10rem;
+}
+
+.faqs-subsection {
+	margin: auto;
+	padding: 2.5rem 2rem 4.5rem 2rem;
+	max-width: 67.5rem;
 }
 
 .faq-header {
@@ -237,7 +290,7 @@ Index Styles
 
 .faq-item {
   margin-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0.0625rem solid #ccc;
 }
 
 .faq-question {
@@ -259,7 +312,7 @@ Index Styles
   display: none;
   padding: 1rem;
   background: #fff;
-  border-top: 1px solid #ccc;
+  border-top: 0.0625rem solid #ccc;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -269,7 +322,7 @@ Navigation Styles
 */
 .navbar {
 	background-color: var(--primary);
-	padding: 1rem 5rem;
+	padding: 1rem 0;
 	position: sticky;
 	top: 0;
 	z-index: 1000;
@@ -277,6 +330,7 @@ Navigation Styles
 }
 
 .nav-content {
+	max-width: 75rem;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -416,10 +470,6 @@ Responsive Design
 		display: flex;
 	}
 
-	.nav-content {
-		padding: 1rem;
-	}
-
 	.nav-links {
 		display: none;
 		width: 100%;
@@ -445,15 +495,81 @@ Responsive Design
 	}
 
 	.navbar {
-		padding: 0.5rem 0;
-		height: 5rem;
+		padding: 0;
 		position: relative;
-		margin-bottom: -1.25rem;
 	}
 
 	.nav-content {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	.side-section {
+		display: grid;
+		place-items: center; /* Centers the subsection within the parent */
+	}
+	  
+	.side-subsection {
+		display: flex;
+		flex-direction: column; /* Stacks items vertically */
+		align-items: center;    /* Centers items horizontally */
+		gap: 1.5rem;            /* Adds spacing between elements */
+		padding: 2rem 2rem;
+		max-width: 67.5rem;
+		text-align: center;     /* Ensures text is centered */
+	}
+	  
+	.side-header {
+		font-size: 2rem;
+		margin-bottom: 0.5rem; /* Optional spacing below the header */
+	}
+	  
+	.side-section-text {
+		font-size: 1rem;
+		line-height: 1.6;
+		color: #555;
+	}
+	  
+	.side-image {
+		text-align: center;
+	}
+	  
+	.side-section-image {
+		margin-top: -1rem;
+		max-width: 75%;
+		height: auto;
+		border-radius: 0.625rem;
+	}
+
+	.second-card-title {
+		font-size: 1rem;
+	}
+
+	.faqs-subsection {
+		margin-top: 2.5rem;
+	}
+
+	.hero-container {
+		justify-content: center; /* Center overlay content horizontally */
+		text-align: center; /* Align all text and buttons inside the overlay */
+		padding: 0; /* Remove outer padding for small screens */
+	}
+
+	.overlay-content {
+		width: 70%; /* Allow content to take up more space */
+		margin: 0 auto; /* Center content horizontally */
+		text-align: center; /* Center-align the text inside the overlay */
+		padding: 0.75rem 1.5rem 1.75rem 1.5rem; /* Adjust padding for smaller screens */
+	}
+
+	.overlay-content h1 {
+		font-size: 1.75rem; /* Adjust headline size */
+		line-height: 2.25rem;
+	}
+
+	.cta-button {
+		padding: 1rem 2.5rem; /* Adjust button size */
+		font-size: 0.9rem;
 	}
 }
