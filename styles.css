@@ -546,7 +546,7 @@ Responsive Design
 	}
 
 	.second-card-title {
-		font-size: 0.75rem;
+		font-size: 1rem;
 	}
 
 	.faqs-subsection {
@@ -578,5 +578,11 @@ Responsive Design
 
 	.card-description {
 		display: none;
+	}
+}
+
+@media (max-width: 24rem) {
+	.second-card-title {
+		font-size: 0.5rem;
 	}
 }
