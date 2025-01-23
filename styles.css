@@ -286,8 +286,6 @@ Index Styles
 	text-align: center;
 	font-size: 2rem;
 	margin-bottom: 1.5rem;
-	text-decoration: none;
-	color: var(--secondary);
 }
 
 .faq-item {
@@ -304,6 +302,8 @@ Index Styles
 	font-size: 1.1rem;
 	cursor: pointer;
 	outline: none;
+	text-decoration: none;
+	color: var(--secondary);
 }
 
 .faq-question:hover {
