@@ -129,7 +129,7 @@ Index Styles
 /* Locations Section */
 .locations-section {
 	display: flex;
-		justify-content: center;
+	justify-content: center;
 }
 
 .locations-subsection {
@@ -182,7 +182,7 @@ Index Styles
 .menu-photos-section {
 	background-color: #F0F0F0;
 	display: flex;
-		justify-content: center;
+	justify-content: center;
 }
 
 .menu-header {
