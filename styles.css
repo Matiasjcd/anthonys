@@ -364,6 +364,24 @@ Navigation Styles
 	color: var(--tertiary);
 }
 
+.hamburger {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+	padding: 0.5rem;
+	background: none;
+	border: none;
+}
+
+.hamburger span {
+	width: 1.5625rem;
+	height: 0.1875rem;
+	background-color: var(--secondary);
+	margin: 0.125rem 0;
+	transition: all 0.3s ease;
+	display: block;
+}
+
 /*
 Footer Styles
 */
@@ -418,22 +436,13 @@ footer {
 	margin: 0;
 }
 
-.hamburger {
-	display: none;
-	flex-direction: column;
-	cursor: pointer;
-	padding: 0.5rem;
-	background: none;
-	border: none;
-}
-
-.hamburger span {
-	width: 1.5625rem;
-	height: 0.1875rem;
-	background-color: var(--secondary);
-	margin: 0.125rem 0;
-	transition: all 0.3s ease;
-	display: block;
+.watermark {
+	line-height: 2em;
+	font-size: 0.75rem;
+	padding-left: 1rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 
 /*
@@ -578,5 +587,12 @@ Responsive Design
 
 	.menu-card-section {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.watermark {
+		position: relative;
+		text-align: center;
+		margin-top: 1.25rem;
+		margin-bottom: -2.5rem;
 	}
 }
